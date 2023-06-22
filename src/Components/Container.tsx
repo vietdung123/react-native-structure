@@ -51,7 +51,7 @@ const Container = ({
         },
       ]}>
       <Animated.View
-        entering={useFading ? FadeIn : null}
+        entering={useFading ? FadeIn : undefined}
         style={[
           styles.container,
           {

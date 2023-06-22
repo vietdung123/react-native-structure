@@ -1,19 +1,24 @@
-import React, { Text, TouchableOpacity, View } from 'react-native';
+import React, { View } from 'react-native';
 import { styles } from './Home.style';
 import { IHomeProps } from './Home.prop';
 import { useAppSelector } from '@/Stores';
 import { navigatePush } from '@/Navigators/NavigationUtils';
+import AppText from '@/Components/AppText';
+import AppButton from '@/Components/AppButton';
+import ErrorLabel from '@/Components/ErrorLabel';
+import Container from '@/Components/Container';
 
 export const Home = (props: IHomeProps) => {
   const user = useAppSelector(state => state.authState.user);
   console.log({ user });
 
   return (
-    <View style={styles.container}>
-      <Text>Home screen</Text>
-      <TouchableOpacity onPress={() => navigatePush('ScreenNoBottomTab')}>
-        <Text>Home screen</Text>
-      </TouchableOpacity>
-    </View>
+    <Container>
+      <View style={styles.container}>
+        <AppText>Abcd</AppText>
+        <AppButton text={'AppBUtton'} onPress={() => navigatePush('ScreenNoBottomTab')} />
+        <ErrorLabel text={'ErrorLabel'} />
+      </View>
+    </Container>
   );
 };
