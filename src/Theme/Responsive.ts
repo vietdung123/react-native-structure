@@ -60,7 +60,7 @@ export class Responsive {
     screenHeight === this.IP14MAX_HEIGHT ||
     screenWidth === this.IP14MAX_WIDTH;
 
-  public isNotchIphone(): boolean {
+  public static isNotchIphone(): boolean {
     return (
       Platform.OS === 'ios' &&
       !Platform.isPad &&
@@ -73,14 +73,14 @@ export class Responsive {
     );
   }
 
-  ifNotchIphone(iphoneXStyle: any, regularStyle: any): any {
+  public static ifNotchIphone(iphoneXStyle: any, regularStyle: any): any {
     if (this.isNotchIphone()) {
       return iphoneXStyle;
     }
     return regularStyle;
   }
 
-  STATUSBAR_HEIGHT = this.ifNotchIphone(Responsive.STATUSBAR_X_HEIGHT, Responsive.STATUSBAR_DEFAULT_HEIGHT);
+  STATUSBAR_HEIGHT = Responsive.ifNotchIphone(Responsive.STATUSBAR_X_HEIGHT, Responsive.STATUSBAR_DEFAULT_HEIGHT);
   MESSAGE_MARGIN_TOP = this.STATUSBAR_HEIGHT + 10;
 }
 
