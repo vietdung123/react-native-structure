@@ -59,7 +59,7 @@ const Container = ({
           },
           containerStyle,
         ]}>
-        <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" {...statusBarProps} />
+        <StatusBar translucent backgroundColor={Colors.background} barStyle="dark-content" {...statusBarProps} />
         <View
           style={[
             styles.container,

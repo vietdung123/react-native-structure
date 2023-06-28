@@ -17,6 +17,7 @@ export const Home = (props: IHomeProps) => {
       <View style={styles.container}>
         <AppText>Abcd</AppText>
         <AppButton text={'AppBUtton'} onPress={() => navigatePush('ScreenNoBottomTab')} />
+        <AppButton text={'MessengerAppBottomTab'} onPress={() => navigatePush('MessengerAppBottomTab')} />
         <ErrorLabel text={'ErrorLabel'} />
       </View>
     </Container>

@@ -1,6 +1,6 @@
 import { APP_NAVIGATION } from '@/Constants';
 import { navigate } from '@/Navigators/NavigationUtils';
-import { Colors, Layout, ResponsiveStyleSheet } from '@/Theme';
+import { CommonColors, Layout, ResponsiveStyleSheet } from '@/Theme';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import React, { useCallback, useMemo } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
@@ -63,7 +63,7 @@ const BottomTabBar = ({ state }: BottomTabBarProps) => {
                 <tab.icon
                   onPress={() => navigate(tab.routeName)}
                   size={24}
-                  color={tab.index === state.index ? Colors.primary : Colors.white}
+                  color={tab.index === state.index ? CommonColors.primary : CommonColors.white}
                 />
               )}
               <Text>{tab.name}</Text>
@@ -100,7 +100,7 @@ const styles = ResponsiveStyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: Colors.kFF7A51,
+    backgroundColor: CommonColors.kFF7A51,
     zIndex: 99,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
@@ -120,6 +120,6 @@ const styles = ResponsiveStyleSheet.create({
     borderRadius: 99,
     overflow: 'hidden',
     borderWidth: 1.5,
-    borderColor: Colors.white,
+    borderColor: CommonColors.white,
   },
 });

@@ -11,19 +11,17 @@ const mergeAppTheme = (isDark: boolean, theme: ReturnType<typeof getAppTheme>) =
   type ImageKey = keyof typeof theme.default.Images | keyof typeof theme.dark.Images;
   type ColorKey = keyof typeof theme.default.Colors | keyof typeof theme.dark.Colors;
 
-  const primaryTheme = isDark ? theme.dark : theme.default;
-  const secondaryTheme = isDark ? theme.default : theme.dark;
+  const selectedTheme = isDark ? theme.dark : theme.default;
   const mergedColors: { [key in ColorKey]: string } = {
-    ...secondaryTheme.Colors,
-    ...primaryTheme.Colors,
+    ...selectedTheme.Colors,
   } as any;
   const mergedImages: { [key in ImageKey]: ImageSourcePropType } = {
-    ...secondaryTheme.Images,
-    ...primaryTheme.Images,
+    ...selectedTheme.Images,
   } as any;
   return {
-    ...primaryTheme,
+    ...selectedTheme,
     Colors: mergedColors,
     Images: mergedImages,
+    isDark,
   };
 };

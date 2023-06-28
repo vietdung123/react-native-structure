@@ -1,4 +1,4 @@
-import { Colors, ResponsiveStyleSheet } from '@/Theme';
+import { CommonColors, ResponsiveStyleSheet } from '@/Theme';
 import React, { memo } from 'react';
 import {
   Image,
@@ -47,11 +47,11 @@ export interface AppButtonProps {
 
 const AppButton = ({
   radius = 8,
-  backgroundColor = Colors.primary,
+  backgroundColor = CommonColors.primary,
   colors,
   disabled,
-  disabledBackgroundColor = Colors.k8E8E8E,
-  disabledTextColor = Colors.white,
+  disabledBackgroundColor = CommonColors.k8E8E8E,
+  disabledTextColor = CommonColors.white,
   icon,
   svgIcon,
   iconStyle,
@@ -62,7 +62,7 @@ const AppButton = ({
   text,
   textStyle,
   iconDirection = 'right',
-  textColor = Colors.background,
+  textColor = CommonColors.background,
   spaceBetween,
   style,
   spacing = 10,
