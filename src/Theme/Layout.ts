@@ -1,4 +1,6 @@
 import { StyleSheet } from 'react-native';
+import { Responsive } from './Responsive';
+import { scale } from 'react-native-size-scaling';
 
 export const Layout = StyleSheet.create({
   /* Column Layouts */
@@ -98,5 +100,16 @@ export const Layout = StyleSheet.create({
   },
   rotate90Inverse: {
     transform: [{ rotate: '-90deg' }],
+  },
+  // other
+  absolute: {
+    position: 'absolute',
+  },
+  containerHPadding: {
+    paddingHorizontal: scale(Responsive.PADDING_SIZE),
+  },
+  resetInput: {
+    padding: 0,
+    margin: 0,
   },
 });

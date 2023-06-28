@@ -1,6 +1,6 @@
 import { StyleProp, TextInput, TextInputProps, TextStyle } from 'react-native';
 import React, { forwardRef, memo } from 'react';
-import { AppFonts, Colors, FontSizes, ResponsiveStyleSheet } from '@/Theme';
+import { AppFonts, CommonColors, FontSizes, ResponsiveStyleSheet } from '@/Theme';
 import { scale } from 'react-native-size-scaling';
 
 export interface AppInputProps extends TextInputProps {
@@ -19,8 +19,8 @@ const AppInput = forwardRef(
     {
       fontWeight = 400,
       fontSize = 'normal',
-      color = Colors.typography,
-      placeholderTextColor = Colors.placeholder,
+      color = CommonColors.typography,
+      placeholderTextColor = CommonColors.placeholder,
       lineHeightRatio,
       lineHeight,
       style,
@@ -56,7 +56,7 @@ export default memo(AppInput);
 
 const styles = ResponsiveStyleSheet.create({
   base: {
-    color: Colors.typography,
+    color: CommonColors.typography,
     skipResponsive: true,
   },
 });

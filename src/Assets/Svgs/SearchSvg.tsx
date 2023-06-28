@@ -1,9 +1,9 @@
-import { Colors } from '@/Theme';
+import { CommonColors } from '@/Theme';
 import * as React from 'react';
 import { scale } from 'react-native-size-scaling';
 import Svg, { Path } from 'react-native-svg';
 
-const SvgComponent = ({ size = 24, color = Colors.black }) => (
+const SvgComponent = ({ size = 24, color = CommonColors.black }) => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 487.95 487.95"

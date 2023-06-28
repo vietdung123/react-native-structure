@@ -1,4 +1,4 @@
-export const Colors = {
+export const CommonColors = {
   primary: '#0084ff',
   primaryLight: '#4da1ff',
   primary50: '#0084ff50',
@@ -22,7 +22,7 @@ export const Colors = {
   disabled: '#E5E5E5',
   error: '#FF0000',
   border: '#eee',
-  background: '#F6F6F6',
+  background: '#FFF',
   kE5AFAF: '#E5AFAF',
   kC4BCFF: '#C4BCFF',
   kC2D8BE: '#C2D8BE',
@@ -49,8 +49,30 @@ export const Colors = {
   kE0144C50: '#E0144C50',
   k54B435: '#54B435',
   blueblack: '#1C315E',
+  kA4AAB2: '#A4AAB2',
+  kA6A6AA: '#A6A6AA',
+  k8E8E93: '#8E8E93',
+  k676E75: '#676E75',
+};
+export const LightColors = {
+  background: '#FFF',
+  textHeader: '#000',
+  bgColorIconHeader: 'rgba(0,0,0, 0.04)',
+  whiteAndBlack: '#000',
+  inputBackground: 'rgba(0, 0, 0, 0.05)',
+  subTextConversationItem: 'rgba(0,0,0,0.5)',
+  borderTopBottomBar: CommonColors.kA6A6AA,
+  unselectTabIcon: CommonColors.kA4AAB2,
 };
 
 export const DarkColors = {
-  typography: '#fff',
+  background: '#000',
+  textHeader: '#FFF',
+  bgColorIconHeader: '#3B3B3B',
+  whiteAndBlack: '#FFF',
+  inputBackground: 'rgba(255, 255, 255, 0.20)',
+  subTextConversationItem: 'rgba(255, 255, 255, 0.50)',
+  borderTopBottomBar: '#000',
+  unselectTabIcon: CommonColors.k676E75,
+
 };

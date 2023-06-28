@@ -1,4 +1,4 @@
-import { AppFonts, Colors, FontSizes } from '@/Theme';
+import { AppFonts, CommonColors, FontSizes } from '@/Theme';
 import React, { memo } from 'react';
 import { StyleProp, StyleSheet, Text, TextProps, TextStyle } from 'react-native';
 import { scale } from 'react-native-size-scaling';
@@ -21,7 +21,7 @@ const AppText = ({
   children,
   fontWeight = 400,
   fontSize = 'normal',
-  color = Colors.black,
+  color = CommonColors.black,
   lineHeightRatio,
   lineHeight,
   style,
@@ -102,6 +102,6 @@ export default memo(AppText);
 
 const styles = StyleSheet.create({
   base: {
-    color: Colors.black,
+    color: CommonColors.black,
   },
 });
