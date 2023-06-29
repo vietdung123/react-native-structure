@@ -25,6 +25,7 @@ export const SearchInput = ({ translationY }: any) => {
     return {
       height: interpolate(translationY.value, [0, INPUT_SEARCH_HEIGHT], [INPUT_SEARCH_HEIGHT, 0], {
         extrapolateRight: Extrapolation.CLAMP,
+         extrapolateLeft:Extrapolation.CLAMP,
       }),
     };
   });
@@ -33,13 +34,14 @@ export const SearchInput = ({ translationY }: any) => {
     return {
       opacity: interpolate(translationY.value, [0, 10], [1, 0], {
         extrapolateRight: Extrapolation.CLAMP,
+         extrapolateLeft:Extrapolation.CLAMP,
       }),
     };
   });
 
   return (
     <Box
-      style={[Layout.containerHPadding, Layout.absolute, Layout.fullWidth, styles.container, { top: HEADER_HEIGHT }]}
+      style={[Layout.containerHPadding, Layout.absolute, Layout.fullWidth, styles.container, { top: HEADER_HEIGHT, backgroundColor: Colors.background }]}
       paddingTop={4}
       paddingBottom={8}>
       <Animated.View style={[animatedHeightStyles, styleColorAppTheme.bgInput, styles.bgInput]}>

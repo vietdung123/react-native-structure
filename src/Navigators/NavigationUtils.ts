@@ -53,6 +53,6 @@ export const goBack = () => {
 
 export const screenOptions: any = {
   headerShown: false, // default header is making screen flicker on android
-  statusBarAnimation: 'slide',
+  // statusBarAnimation: 'slide',
   animation: 'slide_from_right',
 };
