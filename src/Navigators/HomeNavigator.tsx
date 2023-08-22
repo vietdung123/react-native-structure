@@ -1,8 +1,8 @@
 import { HOME_NAVIGATION } from '@/Constants/RouteNames';
-import { Home } from '@/Screens/Home';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { screenOptions } from './NavigationUtils';
+import Home from '@/Screens/Home';
 
 export type HomeStackParam = {
   [HOME_NAVIGATION.NEW_FEED]: undefined;
