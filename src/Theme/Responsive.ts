@@ -93,8 +93,10 @@ export const ResponsiveStyleSheet = {
     StyleSheet.create(
       objectMap(styles, (value: any) => {
         if (skipResponsive || value.skipResponsive) {
+          delete value.skipResponsive;
           return value;
         } else {
+          delete value.skipResponsive;
           return checkForResponsive(value);
         }
       }),
