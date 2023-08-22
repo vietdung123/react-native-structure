@@ -5,7 +5,6 @@ import { ConversationItem } from './ConversationItem';
 import { Layout } from '@/Theme';
 import { SearchInput } from './SearchInput';
 import Animated, { scrollTo, useAnimatedRef, useAnimatedScrollHandler, useSharedValue } from 'react-native-reanimated';
-import _ from 'lodash';
 import { scale } from 'react-native-size-scaling';
 export const HEADER_HEIGHT = scale(64);
 export const INPUT_SEARCH_HEIGHT = scale(36);

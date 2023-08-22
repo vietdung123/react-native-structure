@@ -25,7 +25,7 @@ export function merge(target: any, source: any): void {
  * @param target
  * @return {{}|*}
  */
-export function clone(target: any): any {
+export function clone<T>(target: T): T {
   if (!isObject(target) || !isArray(target)) {
     return target;
   }
