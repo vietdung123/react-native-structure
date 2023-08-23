@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* NewTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NewTemplateTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-NewTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-NewTemplate.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2E5CEC639BE446ECBD2D57F2 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F81AFCED33064078A8504095 /* Lato-Thin.ttf */; };
+		4979EC7CD1E34C2EC693B9CF /* libPods-NewTemplate-NewTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59848D024D7672B448BA1795 /* libPods-NewTemplate-NewTemplateTests.a */; };
 		5F928E16718C446A8695EDAA /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6C003F0381941C09B6FCC7F /* Lato-Regular.ttf */; };
 		671F39C783C1416F8C975AF7 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1688680B947484687292C7F /* Lato-Light.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-NewTemplate-NewTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-NewTemplate-NewTemplateTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9820ACE4FFD3460F8CC46FA1 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F4AB9EBDE443ACA9493EB1 /* Lato-Medium.ttf */; };
 		9DB52BEF647D45D794F59C9B /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63B6EE733A884877AACB43B1 /* Lato-Semibold.ttf */; };
+		B8BEBB990F9C78470E742F7A /* libPods-NewTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 566AB165A6BA402A67742A68 /* libPods-NewTemplate.a */; };
 		BDC51C984FA242C88B79E560 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF7C29583BEF4823991843AC /* Lato-Heavy.ttf */; };
 		CCF3AF00ECED4F518C59051D /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B2F2BE4389422AAED8AA6E /* Lato-Black.ttf */; };
 		D83A3ED2E58C48148F28C5C7 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42FB6BB8EC7F4FE2AE6D493A /* Lato-Bold.ttf */; };
@@ -39,29 +39,29 @@
 		00E356EE1AD99517003FC87E /* NewTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* NewTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewTemplateTests.m; sourceTree = "<group>"; };
-		01F4AB9EBDE443ACA9493EB1 /* Lato-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Medium.ttf"; path = "../src/Assets/Fonts/Lato-Medium.ttf"; sourceTree = "<group>"; };
+		01F4AB9EBDE443ACA9493EB1 /* Lato-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Medium.ttf"; path = "../src/Assets/Fonts/Lato-Medium.ttf"; sourceTree = "<group>"; };
+		10432667941EB99B9374AF67 /* Pods-NewTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate.release.xcconfig"; path = "Target Support Files/Pods-NewTemplate/Pods-NewTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NewTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NewTemplate/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = NewTemplate/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NewTemplate/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NewTemplate/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NewTemplate/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-NewTemplate-NewTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewTemplate-NewTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-NewTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate.debug.xcconfig"; path = "Target Support Files/Pods-NewTemplate/Pods-NewTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		429A114FC03F4CB799ACF2E5 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Hairline.ttf"; path = "../src/Assets/Fonts/Lato-Hairline.ttf"; sourceTree = "<group>"; };
-		42FB6BB8EC7F4FE2AE6D493A /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../src/Assets/Fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-NewTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate.release.xcconfig"; path = "Target Support Files/Pods-NewTemplate/Pods-NewTemplate.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-NewTemplate-NewTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate-NewTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-NewTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63B6EE733A884877AACB43B1 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Semibold.ttf"; path = "../src/Assets/Fonts/Lato-Semibold.ttf"; sourceTree = "<group>"; };
-		75B2F2BE4389422AAED8AA6E /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../src/Assets/Fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		3C69BC636B1C0828123E0768 /* Pods-NewTemplate-NewTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate-NewTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		429A114FC03F4CB799ACF2E5 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Hairline.ttf"; path = "../src/Assets/Fonts/Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		42FB6BB8EC7F4FE2AE6D493A /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../src/Assets/Fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		566AB165A6BA402A67742A68 /* libPods-NewTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59848D024D7672B448BA1795 /* libPods-NewTemplate-NewTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewTemplate-NewTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B6EE733A884877AACB43B1 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Semibold.ttf"; path = "../src/Assets/Fonts/Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		75B2F2BE4389422AAED8AA6E /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../src/Assets/Fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NewTemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-NewTemplate-NewTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate-NewTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		C6C003F0381941C09B6FCC7F /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../src/Assets/Fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		B322A95C52B0C52081865BA6 /* Pods-NewTemplate-NewTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate-NewTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1131F46B110AC60ADCB90F7 /* Pods-NewTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTemplate.debug.xcconfig"; path = "Target Support Files/Pods-NewTemplate/Pods-NewTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C003F0381941C09B6FCC7F /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../src/Assets/Fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F1688680B947484687292C7F /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../src/Assets/Fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
-		F81AFCED33064078A8504095 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../src/Assets/Fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
-		FF7C29583BEF4823991843AC /* Lato-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Heavy.ttf"; path = "../src/Assets/Fonts/Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		F1688680B947484687292C7F /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../src/Assets/Fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		F81AFCED33064078A8504095 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../src/Assets/Fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
+		FF7C29583BEF4823991843AC /* Lato-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Heavy.ttf"; path = "../src/Assets/Fonts/Lato-Heavy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-NewTemplate-NewTemplateTests.a in Frameworks */,
+				4979EC7CD1E34C2EC693B9CF /* libPods-NewTemplate-NewTemplateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-NewTemplate.a in Frameworks */,
+				B8BEBB990F9C78470E742F7A /* libPods-NewTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-NewTemplate.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-NewTemplate-NewTemplateTests.a */,
+				566AB165A6BA402A67742A68 /* libPods-NewTemplate.a */,
+				59848D024D7672B448BA1795 /* libPods-NewTemplate-NewTemplateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,7 +138,6 @@
 				F81AFCED33064078A8504095 /* Lato-Thin.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -176,10 +175,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-NewTemplate.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-NewTemplate.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-NewTemplate-NewTemplateTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-NewTemplate-NewTemplateTests.release.xcconfig */,
+				C1131F46B110AC60ADCB90F7 /* Pods-NewTemplate.debug.xcconfig */,
+				10432667941EB99B9374AF67 /* Pods-NewTemplate.release.xcconfig */,
+				B322A95C52B0C52081865BA6 /* Pods-NewTemplate-NewTemplateTests.debug.xcconfig */,
+				3C69BC636B1C0828123E0768 /* Pods-NewTemplate-NewTemplateTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -191,12 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NewTemplateTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				3CE7D32A7E4C9A072C7C9E59 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				91850C721E42248AF3D85DE8 /* [CP] Embed Pods Frameworks */,
+				6D22A9D66A70ABFF11ED91ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,14 +211,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NewTemplate" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				7733FF20B8CE14CA26309F6F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				4E24D12D79B0235CB7C27312 /* [CP] Embed Pods Frameworks */,
+				A68F0BC855BCCFA8C203D881 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,24 +310,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		3CE7D32A7E4C9A072C7C9E59 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,7 +332,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		4E24D12D79B0235CB7C27312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D22A9D66A70ABFF11ED91ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7733FF20B8CE14CA26309F6F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +388,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		91850C721E42248AF3D85DE8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,7 +405,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		A68F0BC855BCCFA8C203D881 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -404,23 +420,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewTemplate/Pods-NewTemplate-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewTemplate-NewTemplateTests/Pods-NewTemplate-NewTemplateTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -475,7 +474,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-NewTemplate-NewTemplateTests.debug.xcconfig */;
+			baseConfigurationReference = B322A95C52B0C52081865BA6 /* Pods-NewTemplate-NewTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -502,7 +501,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-NewTemplate-NewTemplateTests.release.xcconfig */;
+			baseConfigurationReference = 3C69BC636B1C0828123E0768 /* Pods-NewTemplate-NewTemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -526,7 +525,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-NewTemplate.debug.xcconfig */;
+			baseConfigurationReference = C1131F46B110AC60ADCB90F7 /* Pods-NewTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -537,6 +536,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -552,7 +552,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-NewTemplate.release.xcconfig */;
+			baseConfigurationReference = 10432667941EB99B9374AF67 /* Pods-NewTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -562,6 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -635,6 +636,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -699,6 +701,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
