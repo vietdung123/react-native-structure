@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { ROOT_ROUTES } from '@/Constants';
 import '@/Services/NetworkService';
 import { navigationRef, screenOptions } from './NavigationUtils';
+import { storage } from '@/Storage';
 export type RootStackParam = {
   [ROOT_ROUTES.APP_NAVIGATION]: undefined;
   [ROOT_ROUTES.AUTH_NAVIGATION]: undefined;
@@ -14,6 +15,7 @@ const RootStack = createNativeStackNavigator<RootStackParam>();
 
 export function RootNavigator() {
   const user = true;
+  console.log("📢[index.tsx:18] storage.getString('ts')", storage.getNumber('ts'));
   const chooseScreen = useMemo(() => {
     return user ? (
       <RootStack.Screen name={ROOT_ROUTES.APP_NAVIGATION} component={AppNavigator} />

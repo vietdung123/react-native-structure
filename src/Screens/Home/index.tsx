@@ -10,6 +10,7 @@ import Container from '@/Components/Container';
 import { useCountStore } from '@/Stores/useCountStore';
 import Timestamp from './Timestamp';
 import { useTimestampStore } from '@/Stores/useTimestampStore';
+import { storage } from '@/Storage';
 const Home = (props: IHomeProps) => {
   const count = useCountStore(s => s.count);
   const decrement = useCountStore(s => s.decrement);
@@ -28,6 +29,12 @@ const Home = (props: IHomeProps) => {
         <AppButton text={'decrement'} onPress={() => decrement()} />
         <AppButton text={'Reload ts'} onPress={() => reload()} />
         <Timestamp />
+        <AppButton text={'Storage TS'} onPress={() => {
+          storage.set('ts', Date.now());
+        }} />
+        <AppButton text={'Remove Storage TS'} onPress={() => {
+          storage.delete('ts');
+        }} />
         <AppButton text={'AppBUtton'} onPress={() => navigatePush('ScreenNoBottomTab')} />
         <AppButton text={'MessengerAppBottomTab'} onPress={() => navigatePush('MessengerAppBottomTab')} />
         <ErrorLabel text={'ErrorLabel'} />
