@@ -18,6 +18,7 @@ export const Home = (props: IHomeProps) => {
         <AppText>Abcd</AppText>
         <AppButton text={'AppBUtton'} onPress={() => navigatePush('ScreenNoBottomTab')} />
         <AppButton text={'MessengerAppBottomTab'} onPress={() => navigatePush('MessengerAppBottomTab')} />
+        <AppButton text={'SharedElementScreen'} onPress={() => navigatePush('SharedElement')} />
         <ErrorLabel text={'ErrorLabel'} />
       </View>
     </Container>
