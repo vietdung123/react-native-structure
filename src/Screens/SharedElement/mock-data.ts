@@ -1,4 +1,4 @@
-import { SharedTransition, withSpring, withTiming } from 'react-native-reanimated';
+import { SharedTransition, withTiming } from 'react-native-reanimated';
 
 export const PHOTOS = [
   {
@@ -78,27 +78,24 @@ export const PHOTOS = [
   },
 ];
 
-const noDumping = {   };
+const timingConfig = { duration: 300 };
 
-export const sharedTransition = SharedTransition.custom(values => {
-  'worklet';
-  console.log("📢[mock-data.ts:84]: values: ", values);
-  return {
-    height: withTiming(values.targetHeight, noDumping),
-    width: withTiming(values.targetWidth, noDumping),
-    originX: withTiming(values.targetOriginX, noDumping),
-    originY: withTiming(values.targetOriginY, noDumping),
-  };
-});
-
-export const sharedTransition2 = SharedTransition.custom(values => {
+export const sharedTransitionIn = SharedTransition.custom(values => {
   'worklet';
   return {
-    height: withTiming(values.targetHeight,noDumping),
-    // width: withTiming(values.targetWidth, noDumping),
-    width: 0,
-    originX: withTiming(values.targetOriginX, noDumping),
-    originY: withTiming(values.targetOriginY, noDumping),
-
+    height: withTiming(values.targetHeight, timingConfig),
+    width: withTiming(values.targetWidth, timingConfig),
+    originX: withTiming(values.targetOriginX, timingConfig),
+    originY: withTiming(values.targetOriginY, timingConfig),
+    // originY: values.currentOriginY < 100 ? withTiming(values.targetOriginY, timingConfig) : withSequence(
+    //   withTiming(values.currentOriginY + 50, {
+    //     duration: 300,
+    //     easing: Easing.linear,
+    //   }),
+    //   withTiming(values.targetOriginY, {
+    //     duration: 300,
+    //     easing: Easing.linear,
+    //   }),
+    // ),
   };
 });
