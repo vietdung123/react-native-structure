@@ -54,7 +54,21 @@ export const CommonColors = {
   k8E8E93: '#8E8E93',
   k676E75: '#676E75',
 };
-export const LightColors = {
+
+type ColorTheme = {
+  background: string;
+  textHeader: string;
+  bgColorIconHeader: string;
+  whiteAndBlack: string;
+  inputBackground: string;
+  subTextConversationItem: string;
+  borderTopBottomBar: string;
+  unselectTabIcon: string;
+}
+
+
+
+export const LightColors: ColorTheme = {
   background: '#FFF',
   textHeader: '#000',
   bgColorIconHeader: 'rgba(0,0,0, 0.04)',
@@ -65,7 +79,7 @@ export const LightColors = {
   unselectTabIcon: CommonColors.kA4AAB2,
 };
 
-export const DarkColors = {
+export const DarkColors: ColorTheme = {
   background: '#000',
   textHeader: '#FFF',
   bgColorIconHeader: '#3B3B3B',
@@ -74,5 +88,4 @@ export const DarkColors = {
   subTextConversationItem: 'rgba(255, 255, 255, 0.50)',
   borderTopBottomBar: '#000',
   unselectTabIcon: CommonColors.k676E75,
-
 };
