@@ -37,6 +37,7 @@ const Home = (props: IHomeProps) => {
         }} />
         <AppButton text={'AppBUtton'} onPress={() => navigatePush('ScreenNoBottomTab')} />
         <AppButton text={'MessengerAppBottomTab'} onPress={() => navigatePush('MessengerAppBottomTab')} />
+        <AppButton text={'SharedElementScreen'} onPress={() => navigatePush('SharedElement')} />
         <ErrorLabel text={'ErrorLabel'} />
       </View>
     </Container>

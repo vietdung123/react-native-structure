@@ -14,3 +14,4 @@
 -keep public class com.horcrux.svg.** {*;}
 -keep class com.rt2zz.reactnativecontacts.** {*;}
 -keepclassmembers class com.rt2zz.reactnativecontacts.** {*;}
+-keep class com.shopify.reactnative.skia.** { *; }
