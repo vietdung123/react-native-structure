@@ -1,1 +1,3 @@
-export interface IHomeProps {}
+export interface IHomeProps {
+    navigation: any;
+}

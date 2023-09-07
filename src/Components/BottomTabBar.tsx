@@ -35,6 +35,7 @@ const BottomTabBar = ({ state }: BottomTabBarProps) => {
       },
       {
         name: 'Profile',
+        icon: HeartSvg,
         // icon: ({ color, ...restProps }) => (
         //   <AppImage
         //     {...restProps}
@@ -44,7 +45,7 @@ const BottomTabBar = ({ state }: BottomTabBarProps) => {
         //     }}
         //   />
         // ),
-        routeName: APP_NAVIGATION.PROFILE,
+        routeName: APP_NAVIGATION.NOTIFICATION,
         index: 3,
       },
     ],

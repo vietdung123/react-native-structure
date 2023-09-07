@@ -2,7 +2,6 @@ export const EnvType = {
   STG: 0,
   DEV: 1,
   PROD: 2,
-  GIT: 3,
 };
 export const APP_ENV = EnvType.PROD;
 
