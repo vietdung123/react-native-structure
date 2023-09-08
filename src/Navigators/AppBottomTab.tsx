@@ -1,11 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { View } from 'react-native';
 import { screenOptions } from './NavigationUtils';
 import HomeNavigator from './HomeNavigator';
 import { APP_NAVIGATION } from '@/Constants';
-import { Layout, screenHeight } from '@/Theme';
+import { Layout } from '@/Theme';
 import BottomTabBar from '@/Components/BottomTabBar';
 
 export type TabBottomStackParam = {

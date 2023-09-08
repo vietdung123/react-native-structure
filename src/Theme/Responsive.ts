@@ -161,8 +161,7 @@ const checkForResponsive = (object: any) => {
         key.includes('zIndex')
       ) {
         result[key] = object[key];
-      } else {
-        if (heightProperties.includes(key)) {
+      } else if (heightProperties.includes(key)) {
           result[key] = scale(object[key]);
         } else if (widthProperties.includes(key)) {
           result[key] = scale(object[key]);
@@ -171,7 +170,6 @@ const checkForResponsive = (object: any) => {
         } else {
           result[key] = scale(object[key]);
         }
-      }
     } else {
       result[key] = object[key];
     }

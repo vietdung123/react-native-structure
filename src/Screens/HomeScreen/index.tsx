@@ -1,6 +1,6 @@
 import { View } from 'react-native';
-import { styles } from './Home.style';
-import { IHomeProps } from './Home.prop';
+import { styles } from './style';
+import { IHomeProps } from './prop';
 import React from 'react';
 
 import AppText from '@/Components/AppText';
@@ -12,7 +12,7 @@ import Timestamp from './Timestamp';
 import { useTimestampStore } from '@/Stores/useTimestampStore';
 import { storage } from '@/Storage';
 
-const Home = (props: IHomeProps) => {
+const HomeScreen = (props: IHomeProps) => {
   const count = useCountStore(s => s.count);
   const decrement = useCountStore(s => s.decrement);
   const increment = useCountStore(s => s.increment);
@@ -42,16 +42,10 @@ const Home = (props: IHomeProps) => {
             storage.delete('ts');
           }}
         />
-        <AppButton
-          text={'MessengerAppBottomTab'}
-          onPress={() =>
-            props.navigation.navigate('MessengerAppBottomTab')
-          }
-        />
         <ErrorLabel text={'ErrorLabel'} />
       </View>
     </Container>
   );
 };
 
-export default React.memo(Home);
+export default React.memo(HomeScreen);

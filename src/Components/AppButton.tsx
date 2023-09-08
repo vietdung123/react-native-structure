@@ -120,7 +120,7 @@ const AppButton = ({
       {(!!icon || !!svgIcon) && (
         <>
           <Padding left={scale(spacing)} />
-          {svgIcon ? svgIcon : <Image source={icon} style={[styles.baseIc, iconStyle]} />}
+          {svgIcon ?? <Image source={icon as ImageSourcePropType} style={[styles.baseIc, iconStyle]} />}
         </>
       )}
     </TouchableOpacity>

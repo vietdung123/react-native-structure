@@ -4,7 +4,7 @@ export enum ROOT_ROUTES {
 }
 
 export enum AUTH_NAVIGATION {
-  LOGIN = '[AUTH] LOGIN',
+  LOGIN_SCREEN = '[AUTH] LOGIN_SCREEN',
 }
 
 export enum APP_NAVIGATION {

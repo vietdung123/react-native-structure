@@ -9,7 +9,7 @@ export const responseInterceptor = {
       return Promise.reject(error.response);
     }
     if (error.request) {
-      return Promise.reject({ error: 'Error' });
+      return Promise.reject(error.request);
     }
     return Promise.reject(error);
   },
