@@ -1,0 +1,20 @@
+diff --git a/node_modules/react-native-reanimated/src/animationBuilder.tsx b/node_modules/react-native-reanimated/src/animationBuilder.tsx
+index ce615f8..213fab4 100644
+--- a/node_modules/react-native-reanimated/src/animationBuilder.tsx
++++ b/node_modules/react-native-reanimated/src/animationBuilder.tsx
+@@ -35,13 +35,13 @@ function getCommonProperties(
+     : [componentStyle];
+ 
+   componentStyleFlat = componentStyleFlat.map((style) =>
+-    'initial' in style
++    style && 'initial' in style
+       ? style.initial.value // Include properties of animated style
+       : style
+   );
+ 
+   const componentStylesKeys = componentStyleFlat.flatMap((style) =>
+-    Object.keys(style)
++    style && Object.keys(style)
+   );
+ 
+   const commonKeys = Object.keys(layoutStyle).filter((key) =>
