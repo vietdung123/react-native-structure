@@ -15,7 +15,6 @@ const RootStack = createNativeStackNavigator<RootStackParam>();
 
 export function RootNavigator() {
   const user = true;
-  console.log("📢[index.tsx:18] storage.getString('ts')", storage.getNumber('ts'));
   const chooseScreen = useMemo(() => {
     return user ? (
       <RootStack.Screen name={ROOT_ROUTES.APP_NAVIGATION} component={AppNavigator} />
