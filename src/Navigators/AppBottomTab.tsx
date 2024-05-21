@@ -19,6 +19,7 @@ export type TabBottomStackParam = {
 // https://reactnavigation.org/docs/upgrading-from-5.x/#the-tabbarvisible-option-is-no-longer-present
 
 const Tab = createBottomTabNavigator<TabBottomStackParam>();
+
 const AppBottomTab = () => {
   return (
     <View style={[Layout.fill]}>

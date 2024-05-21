@@ -11,18 +11,16 @@ interface IHomeProps {
 
 const HomeScreen = (props: IHomeProps) => {
 
-  console.log('render Home');
-
   return (
     <Container>
       <View style={styles.container}>
-        <ErrorLabel text={'ErrorLabel'} />
         <AppButton
-          text={'Logout'}
+          text={'Tap here to logout'}
           onPress={() => {
             storage.delete(STORAGE_KEYS.TOKEN);
           }}
-          textColor={CommonColors.mainDark}
+          textColor={CommonColors.error}
+          style={styles.btnLogout}
         />
       </View>
     </Container>

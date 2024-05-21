@@ -1,4 +1,4 @@
-import { ResponsiveStyleSheet, Spacing } from '@/Theme';
+import { CommonColors, ResponsiveStyleSheet, Spacing } from '@/Theme';
 
 export const styles = ResponsiveStyleSheet.create({
   container: {
@@ -7,12 +7,8 @@ export const styles = ResponsiveStyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: Spacing.xl,
   },
-  formContainer: {
-    borderRadius: 5,
-    padding: Spacing.s,
-    width: '100%',
-  },
-  submitButton: {
-    marginTop: Spacing.m,
+  btnLogout: {
+    borderWidth: 1,
+    borderColor: CommonColors.error
   },
 });

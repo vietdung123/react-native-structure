@@ -95,6 +95,7 @@ const AppInput = forwardRef(
                     {height},
                   ]}>
                   <TextInput
+                    autoCapitalize="none"
                     multiline={multiline}
                     keyboardType={keyboardType}
                     numberOfLines={4}
@@ -128,6 +129,7 @@ const AppInput = forwardRef(
         ) : (
           <View style={[styles.base, style, !editable && styles.disable, {height}]}>
             <TextInput
+              autoCapitalize="none"
               multiline={multiline}
               keyboardType={keyboardType}
               numberOfLines={4}

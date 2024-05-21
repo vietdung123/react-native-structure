@@ -22,7 +22,8 @@ target 'NewTemplate' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-
+  pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
+  
   target 'NewTemplateTests' do
     inherit! :complete
     # Pods for testing
@@ -40,7 +41,7 @@ target 'NewTemplate' do
     react_native_post_install(
       installer,
       config[:reactNativePath],
-      :mac_catalyst_enabled => ,
+      :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
   end

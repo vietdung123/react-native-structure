@@ -7858,6 +7858,7 @@ __metadata:
     patch-package: ^8.0.0
     postinstall-postinstall: ^2.1.0
     prettier: ^3.0.3
+    progress-hud: ^1.3.2
     react: 18.2.0
     react-hook-form: ^7.51.4
     react-native: ^0.74.1
@@ -8502,6 +8503,13 @@ __metadata:
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
   checksum: 1d38588e520dab7cea67cbbe2efdd86a10cc7a074c09657635e34f035277b59fbb57d09d8638346bf7090f8e8ebc070c96fa5fd183b777fff4f5edff5e9466cf
+  languageName: node
+  linkType: hard
+
+"progress-hud@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "progress-hud@npm:1.3.2"
+  checksum: fd5d9949ae249eef6fa4be27c0d70eeae4b54d48344735cdb8703cbc575b7f8ad2badaab1d574e2ae334e0655c52aa06905bc0d10ba121045a8537c9c9b55ee7
   languageName: node
   linkType: hard
 
