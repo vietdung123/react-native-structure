@@ -13,6 +13,11 @@ export const CommonColors = {
   kA4AAB2: '#A4AAB2',
   kA6A6AA: '#A6A6AA',
   k676E75: '#676E75',
+  mainDark: '#353535',
+  mainLight: '#fff',
+  kC0C0C0: '#C0C0C0',
+  kF9F9F9: '#F9F9F9',
+  k939393: '#939393',
 };
 
 type ColorTheme = {

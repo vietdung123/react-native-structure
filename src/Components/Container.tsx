@@ -1,5 +1,4 @@
-import { useAppTheme } from '@/Hooks';
-import { Layout, ResponsiveStyleSheet } from '@/Theme';
+import { CommonColors, Layout, ResponsiveStyleSheet } from '@/Theme';
 import React, { memo, useMemo } from 'react';
 import { StatusBar, StatusBarProps, View, ViewStyle } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';
@@ -28,7 +27,6 @@ const Container = ({
   style,
   containerStyle,
 }: ContainerProps) => {
-  const { Colors } = useAppTheme();
   const safeEdges = useMemo<ReadonlyArray<Edge>>(() => {
     if (!disableTop && !disableBottom) {
       return ['top', 'bottom', 'left', 'right'];
@@ -55,16 +53,16 @@ const Container = ({
         style={[
           styles.container,
           {
-            backgroundColor: Colors.background,
+            backgroundColor: CommonColors.background,
           },
           containerStyle,
         ]}>
-        <StatusBar translucent backgroundColor={Colors.background} barStyle="dark-content" {...statusBarProps} />
+        <StatusBar translucent backgroundColor={CommonColors.background} barStyle="dark-content" {...statusBarProps} />
         <View
           style={[
             styles.container,
             {
-              backgroundColor: Colors.background,
+              backgroundColor: CommonColors.background,
             },
             style,
           ]}>

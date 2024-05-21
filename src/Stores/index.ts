@@ -1,3 +1,2 @@
-export * from './useCountStore';
-export * from './useTimestampStore';
+export * from './useLocaleStore';
 export * from './interface';
