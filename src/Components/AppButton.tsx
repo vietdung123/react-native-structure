@@ -1,5 +1,4 @@
-import { CommonColors, ResponsiveStyleSheet } from '@/Theme';
-import React, { memo } from 'react';
+import React, {memo, useRef} from 'react';
 import {
   Image,
   ImageSourcePropType,
@@ -10,45 +9,43 @@ import {
   TouchableOpacity,
   ViewStyle,
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-import AppText, { AppTextProps } from './AppText';
-import Padding from './Padding';
-import { scale } from 'react-native-size-scaling';
+import AppText, {AppTextProps} from './AppText';
+import {ScaledSheet} from 'react-native-size-matters';
+import Spacer, { SpacerMode } from './Spacer';
+import { CommonColors } from '@/Theme';
 
 export interface AppButtonProps {
   text?: string;
   icon?: ImageSourcePropType;
   svgIcon?: React.ReactNode;
-  onPress?: () => void;
+  onPress?: () => void | Promise<void>;
   disabled?: boolean;
   backgroundColor?: string;
-  colors?: (string | number)[];
-  start?: { x: number; y: number };
-  end?: { x: number; y: number };
   disabledBackgroundColor?: string;
   disabledTextColor?: string;
   textColor?: string;
   textSize?: number;
   textWeight?: AppTextProps['fontWeight'];
   textLineHeight?: number;
-  textStyle?: StyleProp<TextStyle>;
+  textStyle?: TextStyle;
   iconStyle?: StyleProp<ImageStyle>;
   opacity?: number;
   iconDirection?: 'left' | 'right';
   spaceBetween?: boolean;
-  style?: StyleProp<ViewStyle> | ViewStyle;
+  style?: StyleProp<ViewStyle>;
   radius?: number;
   spacing?: number;
+  modeSpacing?: SpacerMode;
   shadowColor?: string;
   shadowOpacity?: number;
   shadowSize?: number;
   center?: boolean;
+  variant?: 'primary' | 'secondary';
 }
 
 const AppButton = ({
   radius = 8,
-  backgroundColor = CommonColors.primary,
-  colors,
+  backgroundColor = CommonColors.background,
   disabled,
   disabledBackgroundColor = CommonColors.k8E8E8E,
   disabledTextColor = CommonColors.white,
@@ -57,28 +54,27 @@ const AppButton = ({
   iconStyle,
   onPress,
   opacity = 0.8,
-  start = { x: 0, y: 0 },
-  end = { x: 1, y: 0 },
   text,
   textStyle,
   iconDirection = 'right',
-  textColor = CommonColors.background,
+  textColor = CommonColors.mainLight,
   spaceBetween,
   style,
+  modeSpacing,
   spacing = 10,
   center = true,
   textSize = 16,
-  textWeight = 600,
+  textWeight = 400,
   textLineHeight = 24,
   ...restProps
 }: AppButtonProps) => {
-  const styles = ResponsiveStyleSheet.create({
+  const styles = ScaledSheet.create({
     baseBtn: {
       flexDirection: iconDirection === 'right' ? 'row' : 'row-reverse',
       alignItems: 'center',
       justifyContent: spaceBetween ? 'space-between' : center ? 'center' : 'flex-start',
-      paddingHorizontal: 16,
-      height: 48,
+      paddingHorizontal: '16@s',
+      height: '34@vs',
       borderRadius: radius,
       backgroundColor: disabled ? disabledBackgroundColor : backgroundColor,
       overflow: 'hidden',
@@ -95,31 +91,34 @@ const AppButton = ({
       width: 24,
     },
   });
+
+  const lastTime = useRef(0);
+
   return (
     <TouchableOpacity
       {...restProps}
       disabled={disabled}
       style={[styles.baseBtn, style]}
       activeOpacity={opacity}
-      onPress={onPress}>
-      {!!colors && (
-        <LinearGradient
-          style={styles.btnBg}
-          colors={disabled ? [disabledBackgroundColor, disabledBackgroundColor] : colors}
-          start={start}
-          end={end}
-        />
-      )}
+      onPress={() => {
+        if (Date.now() - lastTime.current > 1500) {
+          onPress && onPress();
+          lastTime.current = Date.now();
+        }
+      }}>
       <AppText
         lineHeight={textLineHeight}
         fontSize={textSize}
         fontWeight={textWeight}
+        numberOfLines={1}
         style={[styles.baseTxt, textStyle]}>
         {text}
       </AppText>
+
       {(!!icon || !!svgIcon) && (
         <>
-          <Padding left={scale(spacing)} />
+          <Spacer mode={modeSpacing} size={spacing} />
+
           {svgIcon ?? <Image source={icon as ImageSourcePropType} style={[styles.baseIc, iconStyle]} />}
         </>
       )}

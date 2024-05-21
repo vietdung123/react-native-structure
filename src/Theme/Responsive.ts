@@ -1,5 +1,5 @@
 import { Dimensions, ImageStyle, Platform, StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { scale } from 'react-native-size-scaling';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 
 const { width, height } = Dimensions.get('window');
 export const screenWidth = width < height ? width : height;
@@ -24,53 +24,32 @@ export class Responsive {
 
   public static BOTTOM_TAB_HEIGHT = 85;
 
-  public static X_WIDTH = 375;
-  public static X_HEIGHT = 812;
-
-  public static XSMAX_WIDTH = 414;
-  public static XSMAX_HEIGHT = 896;
-
-  public static IP12_WIDTH = 390;
-  public static IP12_HEIGHT = 844;
-
-  public static IP12MAX_WIDTH = 428;
-  public static IP12MAX_HEIGHT = 926;
-
-  public static IP14PRO_WIDTH = 393;
-  public static IP14PRO_HEIGHT = 852;
-
-  public static IP14MAX_WIDTH = 430;
-  public static IP14MAX_HEIGHT = 932;
-
-  public static isXSeries =
-    screenHeight === this.X_HEIGHT ||
-    screenWidth === this.X_WIDTH ||
-    screenHeight === this.XSMAX_HEIGHT ||
-    screenWidth === this.XSMAX_WIDTH;
-  public static is11Series = this.isXSeries;
-  public static is12Series =
-    screenHeight === this.IP12MAX_HEIGHT ||
-    screenWidth === this.IP12MAX_WIDTH ||
-    screenHeight === this.IP12_HEIGHT ||
-    screenWidth === this.IP12_WIDTH;
-  public static is13Series = this.is12Series;
-  public static is14Series =
-    screenHeight === this.IP14PRO_HEIGHT ||
-    screenWidth === this.IP14PRO_WIDTH ||
-    screenHeight === this.IP14MAX_HEIGHT ||
-    screenWidth === this.IP14MAX_WIDTH;
-
-  public static isNotchIphone(): boolean {
+  public static isNotchIphone = (): boolean => {
+    const dimensions = Dimensions.get('window')
     return (
       Platform.OS === 'ios' &&
       !Platform.isPad &&
       !Platform.isTV &&
-      (Responsive.is14Series ||
-        Responsive.is13Series ||
-        Responsive.is12Series ||
-        Responsive.is11Series ||
-        Responsive.isXSeries)
-    );
+      (dimensions.height === 780 ||
+        dimensions.width === 780 ||
+        dimensions.height === 812 ||
+        dimensions.width === 812 ||
+        dimensions.height === 844 ||
+        dimensions.width === 844 ||
+        dimensions.height === 896 ||
+        dimensions.width === 896 ||
+        dimensions.height === 926 ||
+        dimensions.width === 926 ||
+        // iphone 13 mini, 12 mini
+        dimensions.height === 780 ||
+        dimensions.width === 780 ||
+        // iphone 15, 15pro, 14 pro
+        dimensions.height === 852 ||
+        dimensions.width === 852 ||
+        // iphone 15 plus, 15pro max, 14 pro max,
+        dimensions.height === 932 ||
+        dimensions.width === 932)
+    )
   }
 
   public static ifNotchIphone(iphoneXStyle: any, regularStyle: any): any {
@@ -162,13 +141,13 @@ const checkForResponsive = (object: any) => {
       ) {
         result[key] = object[key];
       } else if (heightProperties.includes(key)) {
-          result[key] = scale(object[key]);
+          result[key] = verticalScale(object[key]);
         } else if (widthProperties.includes(key)) {
           result[key] = scale(object[key]);
         } else if (fontProperties.includes(key)) {
-          result[key] = scale(object[key]);
+          result[key] = moderateScale(object[key]);
         } else {
-          result[key] = scale(object[key]);
+          result[key] = object[key];
         }
     } else {
       result[key] = object[key];
