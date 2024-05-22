@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Responsive } from './Responsive';
-import { scale } from 'react-native-size-scaling';
+import { scale } from 'react-native-size-matters';
 
 export const Layout = StyleSheet.create({
   /* Column Layouts */

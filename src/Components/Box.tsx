@@ -1,7 +1,7 @@
 import { Layout } from '@/Theme';
 import React, { forwardRef, memo } from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
-import { scale } from 'react-native-size-scaling';
+import { scale, vs } from 'react-native-size-matters';
 
 interface BoxProps {
   children?: React.ReactNode;
@@ -126,16 +126,16 @@ const Box = forwardRef(
             flex && { flex },
             opacity && { opacity },
             (height || size) && {
-              height: size ? scale(size) : typeof height === 'string' ? height : scale(height),
+              height: size ? scale(size) : typeof height === 'string' ? height : height && vs(height),
             },
             (width || size) && {
-              width: size ? scale(size) : typeof width === 'string' ? width : scale(width),
+              width: size ? scale(size) : typeof width === 'string' ? width : width && scale(width),
             },
             maxHeight && {
-              maxHeight: typeof maxHeight === 'string' ? maxHeight : scale(maxHeight),
+              maxHeight: typeof maxHeight === 'string' ? maxHeight : vs(maxHeight),
             },
             minHeight && {
-              minHeight: typeof minHeight === 'string' ? minHeight : scale(minHeight),
+              minHeight: typeof minHeight === 'string' ? minHeight : vs(minHeight),
             },
             maxWidth && {
               maxWidth: typeof maxWidth === 'string' ? maxWidth : scale(maxWidth),
@@ -163,28 +163,28 @@ const Box = forwardRef(
               borderBottomRightRadius: scale(bottomRightRadius),
             },
             paddingBottom && {
-              paddingBottom: scale(paddingBottom),
+              paddingBottom: vs(paddingBottom),
             },
             paddingLeft && { paddingLeft: scale(paddingLeft) },
             paddingRight && { paddingRight: scale(paddingRight) },
-            paddingTop && { paddingTop: scale(paddingTop) },
+            paddingTop && { paddingTop: vs(paddingTop) },
             padding && { padding: scale(padding) },
             paddingHorizontal && {
               paddingHorizontal: scale(paddingHorizontal),
             },
             paddingVertical && {
-              paddingVertical: scale(paddingVertical),
+              paddingVertical: vs(paddingVertical),
             },
-            marginBottom && { marginBottom: scale(marginBottom) },
+            marginBottom && { marginBottom: vs(marginBottom) },
             marginLeft && { marginLeft: scale(marginLeft) },
             marginRight && { marginRight: scale(marginRight) },
-            marginTop && { marginTop: scale(marginTop) },
+            marginTop && { marginTop: vs(marginTop) },
             margin && { margin: scale(margin) },
             marginHorizontal && {
               marginHorizontal: scale(marginHorizontal),
             },
             marginVertical && {
-              marginVertical: scale(marginVertical),
+              marginVertical: vs(marginVertical),
             },
             borderTopWidth && {
               borderTopWidth: scale(borderTopWidth),

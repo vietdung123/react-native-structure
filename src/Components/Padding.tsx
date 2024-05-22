@@ -1,6 +1,6 @@
 import { StyleProp, View, ViewStyle } from 'react-native';
 import React, { memo } from 'react';
-import { scale } from 'react-native-size-scaling';
+import { scale, vs } from 'react-native-size-matters';
 interface PaddingProps {
   bottom?: number;
   left?: number;
@@ -31,17 +31,17 @@ const Padding = ({
         style,
         {
           ...(bottom && {
-            paddingBottom: scale(bottom),
+            paddingBottom: vs(bottom),
           }),
           ...(left && { paddingLeft: scale(left) }),
           ...(right && { paddingRight: scale(right) }),
-          ...(top && { paddingTop: scale(top) }),
+          ...(top && { paddingTop: vs(top) }),
           ...(padding && { padding: scale(padding) }),
           ...(horizontal && {
             paddingHorizontal: scale(horizontal),
           }),
           ...(vertical && {
-            paddingVertical: scale(vertical),
+            paddingVertical: vs(vertical),
           }),
         },
       ]}>

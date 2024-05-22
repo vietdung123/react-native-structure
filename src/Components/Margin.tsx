@@ -1,6 +1,6 @@
 import { StyleProp, View, ViewStyle } from 'react-native';
 import React, { memo } from 'react';
-import { scale } from 'react-native-size-scaling';
+import { scale, vs } from 'react-native-size-matters';
 interface MarginProps {
   bottom?: number;
   left?: number;
@@ -31,17 +31,17 @@ const Margin = ({
         style,
         {
           ...(bottom && {
-            marginBottom: scale(bottom),
+            marginBottom: vs(bottom),
           }),
           ...(left && { marginLeft: scale(left) }),
           ...(right && { marginRight: scale(right) }),
-          ...(top && { marginTop: scale(top) }),
+          ...(top && { marginTop: vs(top) }),
           ...(margin && { margin: scale(margin) }),
           ...(horizontal && {
             marginHorizontal: scale(horizontal),
           }),
           ...(vertical && {
-            marginVertical: scale(vertical),
+            marginVertical: vs(vertical),
           }),
         },
       ]}>

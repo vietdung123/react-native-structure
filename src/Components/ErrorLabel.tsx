@@ -3,7 +3,7 @@ import React from 'react';
 import { TextStyle, ViewStyle } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';
 import AppText from './AppText';
-import { scale } from 'react-native-size-scaling';
+import { vs } from 'react-native-size-matters';
 interface ErrorLabelProps {
   text: string;
   containerStyle?: ViewStyle;
@@ -11,7 +11,7 @@ interface ErrorLabelProps {
 }
 const ErrorLabel = ({ text, containerStyle, textStyle }: ErrorLabelProps) => {
   return (
-    <Animated.View style={[{ paddingTop: scale(6) }, containerStyle]} entering={FadeIn}>
+    <Animated.View style={[{ paddingTop: vs(6) }, containerStyle]} entering={FadeIn}>
       <AppText fontSize={12} color={CommonColors.error} style={textStyle}>
         {text}
       </AppText>

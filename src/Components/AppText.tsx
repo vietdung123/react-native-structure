@@ -1,7 +1,7 @@
 import { AppFonts, CommonColors, FontSizes } from '@/Theme';
 import React, { memo } from 'react';
 import { StyleProp, StyleSheet, Text, TextProps, TextStyle } from 'react-native';
-import { scale } from 'react-native-size-scaling';
+import { ms } from 'react-native-size-matters';
 
 export interface AppTextProps extends TextProps {
   children: React.ReactNode;
@@ -36,11 +36,11 @@ const AppText = ({
   const textStyles = {
     fontFamily: useDefaultFont ? undefined : typeof fontWeight === 'string' ? fontWeight : AppFonts[fontWeight],
     color,
-    fontSize: scale(size),
+    fontSize: ms(size),
     ...(lineHeightRatio && {
-      lineHeight: scale(size * lineHeightRatio),
+      lineHeight: ms(size * lineHeightRatio),
     }),
-    ...(lineHeight && { lineHeight: scale(lineHeight) }),
+    ...(lineHeight && { lineHeight: ms(lineHeight) }),
     textAlign: align,
   };
   return Array.isArray(children) ? (

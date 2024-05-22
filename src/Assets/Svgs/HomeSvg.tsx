@@ -1,6 +1,6 @@
 import { CommonColors } from '@/Theme';
 import * as React from 'react';
-import { scale } from 'react-native-size-scaling';
+import { scale } from 'react-native-size-matters';
 import Svg, { Path } from 'react-native-svg';
 
 const HomeSvg = ({ size = 24, color = CommonColors.black }) => (
